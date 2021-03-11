@@ -1,0 +1,130 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>ALUMNI REGISTRATION FORM</title>
+
+<script type="text/javascript" src="http://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=KeotqVk9NnW7AZfhgj7x2DLMdLEXs_BemYbeXllf4M37MYpRfggeaKXLxz3mpi7dRLO5x56NHQiJwNi-6u8Kow" charset="UTF-8"></script><script language="javascript">
+<!--
+var win=null;
+function NewWindow(mypage,myname,w,h,pos,infocus){
+if(pos=="random"){myleft=(screen.width)?Math.floor(Math.random()*(screen.width-w)):100;mytop=(screen.height)?Math.floor(Math.random()*((screen.height-h)-75)):100;}
+if(pos=="center"){myleft=(screen.width)?(screen.width-w)/2:100;mytop=(screen.height)?(screen.height-h)/2:100;}
+else if((pos!='center' && pos!="random") || pos==null){myleft=0;mytop=0}
+settings="width=" + w + ",height=" + h + ",top=" + mytop + ",left=" + myleft + ",scrollbars=yes,location=no,directories=no,status=no,menubar=no,toolbar=no,resizable=no";win=window.open(mypage,myname,settings);
+win.focus();}
+
+function Left(str, n){
+	if (n <= 0)
+	    return "";
+	else if (n > String(str).length)
+	    return str;
+	else
+	    return String(str).substring(0,n);
+}
+// -->
+</script>
+
+<script type="text/javascript" >
+  function checkEmpty()
+  {
+
+	if(document.frmMemberReg.DBSPname.value=="")
+	{
+		window.alert("Please Enter Name");
+		document.frmMemberReg.DBSPname.focus();
+		return false;
+	}
+		if(document.frmMemberReg.DBSPdob.value=="")
+	{
+		window.alert("Please Enter Date Of Birth");
+		document.frmMemberReg.DBSPdob.focus();
+		return false;
+	}
+		if(document.frmMemberReg.DBSPgender.value=="")
+	{
+		window.alert("Please Enter Gender");
+		document.frmMemberReg.DBSPgender.focus();
+		return false;
+	}
+		if(document.frmMemberReg.DBSPaddress.value=="")
+	{
+		window.alert("Please Enter Address");
+		document.frmMemberReg.DBSPaddress.focus();
+		return false;
+	}
+		if(document.frmMemberReg.DBSPcity.value=="")
+	{
+		window.alert("Please Enter City");
+		document.frmMemberReg.DBSPcity.focus();
+		return false;
+	}
+		if(document.frmMemberReg.DBSPpin.value=="")
+	{
+		window.alert("Please Enter Pin");
+		document.frmMemberReg.DBSPpin.focus();
+		return false;
+	}
+		if(document.frmMemberReg.DBSPstate.value=="")
+	{
+		window.alert("Please Enter State");
+		document.frmMemberReg.DBSPstate.focus();
+		return false;
+	}
+		if(document.frmMemberReg.DBSPCountry.value=="")
+	{
+		window.alert("Please Enter Name");
+		document.frmMemberReg.DBSPCountry.focus();
+		return false;
+	}
+		if(document.frmMemberReg.DBSPmob.value=="")
+	{
+		window.alert("Please Enter Mobile No");
+		document.frmMemberReg.DBSPmob.focus();
+		return false;
+	}
+		if((document.frmMemberReg.DBSPemail.value=="")||(document.frmMemberReg.DBSPemail.value.indexOf('@') == -1)||(document.frmMemberReg.DBSPemail.value.indexOf('.') == -1))
+	{
+
+		window.alert("Please Enter Valid Email Id");
+		document.frmMemberReg.DBSPemail.focus();
+		return false;
+	}
+  }
+</script>
+<script type="text/javascript">
+<!--
+function MM_jumpMenu(targ,selObj,restore){ //v3.0
+  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+  if (restore) selObj.selectedIndex=0;
+}
+//-->
+</script>
+</head>
+<body>
+<div align="center" style="width:100%;"><img src="images/Bg.JPG" /><br />
+  <h2>ALUMNI ASSOCIATION</h2>
+  <!--<div>Registration || Login</div>--><br /><br />
+</div>
+
+
+<form id="form1" name="frmMemberReg" method="post" action="InsertTablealm.asp">
+  <table width="100%" border="0" cellspacing="0" cellpadding="0" style="font-family:verdana; font-size:12px; line-height:25px; background-color:#FFFFCC;">
+    <tr>
+      <td colspan="6" align="center" bgcolor="#CC9933"><h3>ALUMNI REGISTRATION FORM</h3></td>
+    </tr>
+    <tr>
+      <td width="31%"><b>Alumni Member</b></td>
+      <td width="1%"><label></label></td>
+      <td width="68%" colspan="4">
+      <select name="jumpMenu" id="jumpMenu" onchange="MM_jumpMenu('parent',this,0)">
+        <option value="-">Select</option>
+        <option value="student-alumni.asp">Student</option>
+        <option value="staff-alumni.asp">Staff</option>
+      </select>
+    </tr>
+  </table>
+</form>
+</body>
+</html>
